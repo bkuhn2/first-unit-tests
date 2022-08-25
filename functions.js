@@ -16,7 +16,8 @@ function sayHello(name) {
 
 
 function buildCar(color, type) {
-  var parameters = color, type;
+  var parameters = color || type;
+  console.log(parameters)
   var vehicle = {
     color: color,
     type: type,
