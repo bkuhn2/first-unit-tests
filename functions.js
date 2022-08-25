@@ -16,13 +16,11 @@ function sayHello(name) {
 
 
 function buildCar(color, type) {
-  var parameters = color || type;
-  console.log(parameters)
   var vehicle = {
     color: color,
     type: type,
   }
-  if (parameters === undefined) {
+  if (color === undefined && type === undefined) {
     return {}
   } else {
     return vehicle
